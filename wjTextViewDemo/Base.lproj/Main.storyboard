@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wjTextViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0v-Rq-c3R">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-k3-Sno">
+                                        <rect key="frame" x="270" y="17" width="60" height="30"/>
+                                        <state key="normal" title="获取内容"/>
+                                        <connections>
+                                            <action selector="getAttributeString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2s-qQ-lIs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="233-gU-MAD"/>
+                                    <constraint firstItem="LzI-k3-Sno" firstAttribute="centerX" secondItem="g0v-Rq-c3R" secondAttribute="centerX" id="F3h-mt-U3s"/>
+                                    <constraint firstItem="LzI-k3-Sno" firstAttribute="centerY" secondItem="g0v-Rq-c3R" secondAttribute="centerY" id="der-7r-lij"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g0v-Rq-c3R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JPu-Fm-f9Y"/>
+                            <constraint firstItem="g0v-Rq-c3R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jqN-pC-yZK"/>
+                            <constraint firstAttribute="trailing" secondItem="g0v-Rq-c3R" secondAttribute="trailing" id="zjh-t1-OGX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="aZW-US-pGl" kind="show" identifier="wViewControllerToShowOutput" id="EVz-7V-Uk0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-253" y="9"/>
+        </scene>
+        <!--Show Output View Controller-->
+        <scene sceneID="ucK-9N-IKh">
+            <objects>
+                <viewController id="aZW-US-pGl" customClass="ShowOutputViewController" customModule="wjTextViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8K-v6-cue"/>
+                        <viewControllerLayoutGuide type="bottom" id="bts-f1-jW1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vct-dW-x5x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPN-lF-S7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="18"/>
+        </scene>
+    </scenes>
+</document>
